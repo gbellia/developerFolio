@@ -6,6 +6,7 @@ import landingPerson from "../../assets/lottie/landingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
+import Typewriter from "typewriter-effect";
 
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
@@ -24,8 +25,15 @@ export default function Greeting() {
               <h1
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
               >
-                {" "}
-                {greeting.title}{" "}
+                <div className="greeting-typewriter">
+                  <Typewriter
+                    options={{
+                      strings: greeting.title,
+                      autoStart: true,
+                      loop: false
+                    }}
+                  />{" "}
+                </div>
                 <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
               <p
@@ -35,7 +43,14 @@ export default function Greeting() {
                     : "greeting-text-p subTitle"
                 }
               >
-                {greeting.subTitle}
+                <Typewriter
+                  options={{
+                    strings: greeting.subTitle,
+                    delay: 50,
+                    autoStart: true,
+                    loop: false
+                  }}
+                />
               </p>
               <SocialMedia />
               <div className="button-greeting-div">

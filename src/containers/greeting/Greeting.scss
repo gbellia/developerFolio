@@ -1,5 +1,9 @@
 @import "../../_globalColor";
 
+.greeting-typewriter {
+  display: inline-block;
+}
+
 .main {
   width: 90%;
   padding: 20px 10px;
@@ -35,7 +39,7 @@
 }
 
 .greeting-text {
-  font-size: 70px;
+  font-size: 60px;
   line-height: 1.1;
   color: $textColor !important;
 }

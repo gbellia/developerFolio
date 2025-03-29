@@ -23,9 +23,8 @@ const greeting = {
   username: "Guilherme Bellia",
   title: "Hi, I'm Guilherme Bellia",
   subTitle:
-    "A passionate Full Stack Software Developer having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks.",
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "A passionate Front-End Developer having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / and some other cool libraries and frameworks.",
+  resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -39,8 +38,7 @@ const socialMediaLinks = {
   facebook: "https://www.facebook.com/saad.pasta7",
   medium: "https://medium.com/@saadpasta",
   stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
+  twitter: "https://twitter.com/0xgb5dvc1q4yd",
   display: true // Set true to display this section, defaults to false
 };
 
@@ -126,7 +124,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
+      logo: require("./assets/images/anhangueraLogo.png"),
       subHeader: "Master of Science in Computer Science",
       duration: "September 2017 - April 2019",
       desc: "Participated in the research of XXX and published 3 papers.",
@@ -369,7 +367,7 @@ const contactInfo = {
 // Twitter Section
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
+  userName: "0xgb5dvc1q4yd", //Replace "twitter" with your twitter username without @
   display: true // Set true to display this section, defaults to false
 };
 
